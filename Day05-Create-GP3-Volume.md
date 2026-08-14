@@ -1,5 +1,7 @@
 # ☁️ Day 05 – Create AWS EBS Volume (gp3)
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to create an Amazon Elastic Block Store (EBS) volume with a specific name, type, and size to support cloud infrastructure storage requirements.

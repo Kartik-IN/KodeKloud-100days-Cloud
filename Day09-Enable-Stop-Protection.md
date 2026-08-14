@@ -1,5 +1,5 @@
 # ☁️ Day 09 – Enable Stop Protection for EC2 Instance
-
+---
 ## 📌 Challenge Description
 
 The objective of this task was to enable **Stop Protection** for an EC2 instance to prevent accidental stopping of critical workloads.

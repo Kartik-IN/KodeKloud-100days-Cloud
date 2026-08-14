@@ -1,5 +1,7 @@
 # ☁️ Day 06 – Launch EC2 Instance
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to launch an Amazon EC2 instance with the required configuration to support application deployment in the cloud environment.

@@ -1,5 +1,7 @@
 # ☁️ Day 10 – Attach Elastic IP to EC2 Instance
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to attach an existing Elastic IP address to an EC2 instance to ensure stable and persistent public connectivity.

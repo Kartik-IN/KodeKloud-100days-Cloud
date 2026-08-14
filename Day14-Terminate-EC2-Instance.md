@@ -1,5 +1,7 @@
 # ☁️ Day 14 – Terminate EC2 Instance
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to delete an obsolete EC2 instance that was no longer required as part of infrastructure cleanup and resource optimization.

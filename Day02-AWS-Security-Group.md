@@ -1,5 +1,7 @@
 # ☁️ Day 02 – AWS Security Group Creation (Network Security Basics)
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to create a security group under the default VPC to control inbound traffic for application servers during a cloud migration process.

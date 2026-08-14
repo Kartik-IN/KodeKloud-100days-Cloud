@@ -1,5 +1,7 @@
 # ☁️ Day 07 – Change EC2 Instance Type
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to modify the instance type of an existing EC2 instance to match updated performance or cost requirements.

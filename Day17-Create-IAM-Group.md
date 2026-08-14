@@ -1,5 +1,5 @@
 # ☁️ Day 17 – Create IAM Group
-
+---
 ## 📌 Challenge Description
 
 The objective of this task was to create an IAM group to manage permissions efficiently for multiple users.

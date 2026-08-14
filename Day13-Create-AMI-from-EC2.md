@@ -1,5 +1,5 @@
 # ☁️ Day 13 – Create AMI from EC2 Instance
-
+---
 ## 📌 Challenge Description
 
 The objective of this task was to create an Amazon Machine Image (AMI) from an existing EC2 instance to enable fast provisioning, backup, and disaster recovery.

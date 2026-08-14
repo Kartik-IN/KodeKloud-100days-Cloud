@@ -41,6 +41,7 @@ This challenge helps me build strong hands-on experience with AWS services, clou
 - Monitoring & Security Basics
 
 ---
+
 ## 📚 What You Will Find Here
 
 - ✅ Step-by-step cloud labs
@@ -62,8 +63,8 @@ I believe in learning by doing, documenting everything clearly, and improving da
 
 ## 🔗 Connect With Me
 
-- GitHub: https://github.com/YOUR_USERNAME  
-- LinkedIn: https://www.linkedin.com/in/YOUR_PROFILE  
+- GitHub: https://github.com/YOUR_USERNAME
+- LinkedIn: https://www.linkedin.com/in/YOUR_PROFILE
 
 ---
 

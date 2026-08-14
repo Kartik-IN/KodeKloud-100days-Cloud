@@ -1,5 +1,5 @@
 # ☁️ Day 18 – Create IAM Read-Only Policy for EC2
-
+---
 ## 📌 Challenge Description
 
 The objective of this task was to create a custom IAM policy that grants read-only access to Amazon EC2 resources.

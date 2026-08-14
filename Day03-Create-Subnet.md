@@ -1,5 +1,7 @@
 # ☁️ Day 03 – Create Subnet in Default VPC
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to create a subnet under the default VPC to support incremental cloud migration and proper network segmentation.

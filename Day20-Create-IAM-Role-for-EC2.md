@@ -1,5 +1,7 @@
 # ☁️ Day 20 – Create IAM Role for EC2 with Policy Attachment
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to create an IAM role for EC2 and attach the required IAM policy to allow EC2 instances to securely access AWS services without using access keys.

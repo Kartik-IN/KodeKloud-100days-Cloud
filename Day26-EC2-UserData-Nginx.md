@@ -71,32 +71,40 @@ apt install nginx -y
 systemctl start nginx
 systemctl enable nginx
 ```
-Step 3: Launch Instance
+
+### Step 3: Launch Instance
+
 Completed EC2 creation and waited until instance reached Running state.
 
-Step 4: Verify Nginx
+---
+
+### Step 4: Verify Nginx
+
 Copied Public IPv4 address and opened in browser:
 
+```bash
 http://<EC2_PUBLIC_IP>
+```
+
 Default Nginx page loaded successfully.
 
-🔍 Verification Summary
-EC2 instance created successfully.
+---
 
-User data executed during boot.
+## 🔍 Verification Summary
 
-Nginx installed automatically.
+- EC2 instance created successfully
+- User data executed during boot
+- Nginx installed automatically
+- HTTP traffic allowed
+- Web page accessible
 
-HTTP traffic allowed.
+---
 
-Web page accessible.
+## 💡 Key Takeaways
 
-💡 Key Takeaways
-User data automates server initialization.
-
-Nginx can be installed without manual SSH.
-
-Security Groups control web access.
+- User data automates server initialization
+- Nginx can be installed without manual SSH
+- Security Groups control web access
 
 This is foundational for cloud automation.
 

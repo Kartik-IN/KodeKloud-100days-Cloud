@@ -1,5 +1,7 @@
 # ☁️ Day 01 – AWS EC2 Key Pair Creation (RSA)
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to create an EC2 key pair that will be used to securely access virtual machines during cloud migration and infrastructure setup.

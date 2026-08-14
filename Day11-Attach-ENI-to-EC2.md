@@ -1,5 +1,7 @@
 # ☁️ Day 11 – Attach Elastic Network Interface (ENI) to EC2 Instance
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to attach an Elastic Network Interface (ENI) to an existing EC2 instance to enhance networking flexibility and advanced configuration capabilities.

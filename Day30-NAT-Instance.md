@@ -1,5 +1,7 @@
 # ☁️ Day 30 – Configure a NAT Instance for Private EC2 Internet Access
 
+---
+
 ## 📌 Task Overview
 
 The Nautilus DevOps team needed to provide internet access to an EC2 instance running inside a private subnet.

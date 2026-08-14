@@ -1,5 +1,7 @@
 # ☁️ Day 21 – Launch EC2 Instance with Elastic IP for Application Hosting
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to launch a new EC2 instance and associate an Elastic IP with it to provide a stable and consistent public IP address for application hosting.

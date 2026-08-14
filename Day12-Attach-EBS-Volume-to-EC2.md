@@ -1,5 +1,7 @@
 # ☁️ Day 12 – Attach EBS Volume to EC2 Instance
 
+---
+
 ## 📌 Challenge Description
 
 The objective of this task was to attach an existing Amazon EBS volume to a running EC2 instance to provide additional persistent storage.

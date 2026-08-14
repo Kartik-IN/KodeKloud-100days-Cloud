@@ -1,5 +1,5 @@
 # ☁️ Day 19 – Attach IAM Policy to IAM User
-
+---
 ## 📌 Challenge Description
 
 The objective of this task was to attach an IAM policy to a specific IAM user in order to grant controlled access to AWS resources.

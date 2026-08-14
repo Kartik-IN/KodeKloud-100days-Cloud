@@ -1,5 +1,5 @@
 # ☁️ Day 16 – Create IAM User
-
+---
 ## 📌 Challenge Description
 
 The objective of this task was to create a new IAM user to enable secure and controlled access to AWS resources.
