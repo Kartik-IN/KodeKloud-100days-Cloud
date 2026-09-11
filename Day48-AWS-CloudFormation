@@ -1,0 +1,147 @@
+Day 48: Automating Infrastructure Deployment with AWS CloudFormation
+📌 Overview
+
+On Day 48, I worked with AWS CloudFormation to automate the deployment and management of AWS infrastructure using Infrastructure as Code (IaC).
+
+Instead of creating AWS resources manually through the AWS Console, CloudFormation allows infrastructure to be defined in a YAML template and deployed as a stack.
+
+🎯 Objectives
+Understand AWS CloudFormation
+Create infrastructure using YAML
+Deploy AWS resources automatically
+Use CloudFormation stacks to manage resources
+Validate CloudFormation templates
+Verify deployed resources using AWS CLI
+Understand IAM capabilities required by CloudFormation
+🛠️ Technologies Used
+AWS CloudFormation
+AWS CLI
+Amazon SQS
+Amazon SNS
+AWS Lambda
+AWS IAM
+YAML
+🏗️ Architecture
+                CloudFormation Template
+                         |
+                         ▼
+                CloudFormation Stack
+                         |
+        +----------------+----------------+
+        |                |                |
+        ▼                ▼                ▼
+       SNS              SQS             Lambda
+      Topic            Queues          Function
+        |                |                |
+        +----------------+----------------+
+                         |
+                         ▼
+                    IAM Role
+📁 CloudFormation Template
+
+The CloudFormation template was created at:
+
+/root/xfusion-priority-stack.yml
+
+The template defines the required AWS infrastructure as code.
+
+🚀 Deploying the Stack
+1. Validate the template
+aws cloudformation validate-template \
+  --template-body file:///root/xfusion-priority-stack.yml \
+  --region us-east-1
+
+Expected result:
+
+Capabilities:
+CAPABILITY_NAMED_IAM
+2. Create the CloudFormation stack
+aws cloudformation create-stack \
+  --stack-name xfusion-priority-stack \
+  --template-body file:///root/xfusion-priority-stack.yml \
+  --capabilities CAPABILITY_NAMED_IAM \
+  --region us-east-1
+3. Check stack status
+aws cloudformation describe-stacks \
+  --stack-name xfusion-priority-stack \
+  --region us-east-1 \
+  --query "Stacks[0].StackStatus"
+
+Expected:
+
+CREATE_COMPLETE
+🔄 Stack Management
+
+CloudFormation manages all resources defined in the template as a single stack.
+
+To view stack resources:
+
+aws cloudformation list-stack-resources \
+  --stack-name xfusion-priority-stack \
+  --region us-east-1
+
+To delete the stack:
+
+aws cloudformation delete-stack \
+  --stack-name xfusion-priority-stack \
+  --region us-east-1
+🔐 IAM Capabilities
+
+Because the CloudFormation template creates an IAM role, the stack requires:
+
+CAPABILITY_NAMED_IAM
+
+Without it, CloudFormation returns:
+
+InsufficientCapabilitiesException
+
+Therefore, the deployment command includes:
+
+--capabilities CAPABILITY_NAMED_IAM
+⚠️ Troubleshooting
+Template validation error
+
+Validate the template before deployment:
+
+aws cloudformation validate-template \
+  --template-body file:///root/xfusion-priority-stack.yml \
+  --region us-east-1
+Stack rollback
+
+If deployment fails:
+
+aws cloudformation describe-stack-events \
+  --stack-name xfusion-priority-stack \
+  --region us-east-1 \
+  --output table
+
+This helps identify which resource caused the failure.
+
+Stack already exists
+
+If you receive:
+
+AlreadyExistsException
+
+check the existing stack:
+
+aws cloudformation describe-stacks \
+  --stack-name xfusion-priority-stack \
+  --region us-east-1
+📚 Key Learnings
+CloudFormation provides Infrastructure as Code.
+YAML templates can define AWS infrastructure.
+A CloudFormation stack manages related resources together.
+validate-template helps detect template problems before deployment.
+IAM resources may require CAPABILITY_NAMED_IAM.
+CloudFormation automatically handles resource creation and dependencies.
+Stack events are useful for troubleshooting failed deployments.
+✅ Result
+
+Successfully learned how to automate AWS infrastructure deployment using CloudFormation, including template creation, validation, stack deployment, resource verification, IAM capabilities, and troubleshooting.
+
+📅 Day 48
+
+Topic: Automating Infrastructure Deployment with AWS CloudFormation
+
+Focus: Infrastructure as Code (IaC) 🚀
